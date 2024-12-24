@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM alpine:latest
 
-RUN apt-get update && apt-get install -y bash
+RUN apk add --no-cache bash
 
 COPY info_script.sh /usr/local/bin/info_script.sh
 
